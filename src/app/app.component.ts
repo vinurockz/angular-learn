@@ -15,9 +15,11 @@ class investigation{
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-
+  students: any =[]
   constructor() {}
   ngOnInit() {
+    [{ "name":"John", "reg":30, "car":null },{ "name":"John", "reg":15, "car":null },{ "name":"John", "reg":30, "car":null }]
+
   }
 
 }
