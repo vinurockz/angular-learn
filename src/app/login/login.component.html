@@ -1,21 +1,23 @@
 <!-- <form #loginForm="ngForm">
   
-</form> -->
+</form> 
+[disabled]="!loginForm.valid"
+-->
 <div class="row" style="height: 500px; width:200px;">
   <h3>Login Form</h3> 
-  <div style="margin-top:5px;">
-    <label><h4>UserName</h4></label>
-    <input type="text" #UserName ngModel name="UserName" placeholder="UserName">
+  <div class="input-field col s12">
+    <label><h4>Username</h4></label>
+    <input type="text" #UserName ngModel name="UserName" placeholder="UserName" required>
 
   </div>
   
-  <div style="margin-top:5px;">
+  <div class="input-field col s12" >
     <label><h4>Password</h4></label>
-    <input type="text" #Password ngModel name="Password" placeholder="Password">
+    <input type="text" #Password ngModel name="Password" placeholder="Password" required>
 
   </div>
-  <div style="margin-top:5px;">
-  <button class="btn btn-primary">Login</button>
+  <div class="input-field col s12" >
+  <button  class="btn btn-primary">Login</button>
   
 
 </div>
