@@ -5,4 +5,17 @@ export class LoginService {
 
   constructor() { }
 
+login(){
+  return [
+    {
+      username: 'vinu',
+      pssword: '123'
+    },
+    {
+      username: 'test',
+      pssword: 'test'
+    }
+  ]
+}
+
 }
